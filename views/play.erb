@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="shortcut icon" href="/imgs/favicon.ico" type="image/x-icon" />
+    <link href="/css/reset.css" rel="stylesheet">
+    <link href="/css/style.css" rel="stylesheet">
+    <title>Rock, Paper, Scissors</title>
+  </head>
+
+  <body>
+
+     <header> 
+        <div class="wrapper_logo" style="background-image: url('/imgs/rps_title2.png');"></div>   
+      </header>
+     
+        <div class="container_result">
+          <h2 style="background color:#fff; color: #000000"><%= @result %></h2>
+          <br>
+          <br>
+          <h4>Your choice: <strong><%= @user_move %></strong></h4>
+          <br>
+          <h4>Computer's choise: <strong><%= @comp_move %></strong></h4>
+          <br>
+          
+        </div>
+
+        <div class="btn_container">
+          <a href="/" class="button" role="button">
+            PLAY AGAIN
+          </a>
+      </div>
+
+      <footer> 
+        <div class="footImg">
+          <p><strong>ALOHA</strong>ta  <img src="/imgs/a_flower.png"/></p>
+        </div>
+      </footer>
+    </body>
+</html>
