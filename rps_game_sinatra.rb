@@ -1,3 +1,5 @@
+require 'rubygems'
+require 'bundler/setup'
 require 'sinatra'
 require 'erb'
 
@@ -9,10 +11,6 @@ get '/play/:move' do
   @user_move = params[:move]
   rules = {'rock' => 'scissors', 'scissors' => 'paper', 'paper' => 'rock'}
   moves = rules.keys
-
-  if not moves.include? @user_move
-    @result = "Wrong move: #{@user_move}"
-  end
 
   @comp_move = moves.sample
 
